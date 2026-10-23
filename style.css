@@ -1,0 +1,194 @@
+/* ---------- General Styles ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+    font-family: Arial, sans-serif;
+    color: #40334f;
+    min-height: 100vh;
+    margin: 0;
+    padding: 50px 20px;
+}
+
+
+/* ---------- Main Container ---------- */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ---------- Hero Section ---------- */
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.55);
+    color: #805a91;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 48px;
+    color: #624477;
+    margin: 10px 0;
+}
+
+.subtitle {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.description {
+    max-width: 550px;
+    margin: 15px auto 0;
+    line-height: 1.8;
+    color: #5f5570;
+    font-size: 16px;
+}
+
+
+/* ---------- Cards Layout ---------- */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* ---------- Individual Cards ---------- */
+
+.card {
+    background: rgba(255, 255, 255, 0.88);
+    padding: 30px 22px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(73, 48, 94, 0.10);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* ---------- Hover Effect ---------- */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(73, 48, 94, 0.18);
+}
+
+
+/* ---------- Icons ---------- */
+
+.icon {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+
+/* ---------- Card Headings ---------- */
+
+.card h2 {
+    color: #805a91;
+    font-size: 21px;
+    margin: 10px 0;
+}
+
+
+/* ---------- Card Descriptions ---------- */
+
+.card p {
+    color: #6f6879;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+
+/* ---------- Footer ---------- */
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #625471;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer span {
+    font-size: 13px;
+}
+
+
+/* ---------- Tablet Responsive Design ---------- */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 35px 18px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+}
+
+
+/* ---------- Mobile Responsive Design ---------- */
+
+@media (max-width: 520px) {
+
+    body {
+        padding: 30px 16px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card {
+        padding: 25px 20px;
+    }
+
+    .footer {
+        margin-top: 30px;
+    }
+
+}
